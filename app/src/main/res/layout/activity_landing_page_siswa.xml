@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context=".LandingPageSiswa">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:popupTheme="@style/MenuStyle">-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:id="@+id/profile_image"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:civ_border_color="@color/colorPrimary"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/username"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginStart="25dp" />-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:windowBackground"
+        />
+
+</RelativeLayout>

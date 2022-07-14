@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBg">
+
+    <TextView
+        android:id="@+id/username_cek_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/username_cek_hasil">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profile_image"
+            android:src="@drawable/img1"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/wrap_list_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            app:cardElevation="10dp"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            android:outlineAmbientShadowColor="@color/colorPrimary"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cek_tingkatDiag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tingkat Depresi"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="("
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:id="@+id/cek_skorDiag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Skor Depresi"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=")"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/colorPrimary"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lihat Detail"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/colorPrimary"
+                            />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            app:srcCompat="@drawable/ic_arrow_history"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/cek_dateDiag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Date"
+                                android:fontFamily="@font/poppins_light"
+                                android:textStyle="italic"
+                                android:gravity="end"
+                                android:textColor="#CACACA"
+                                android:layout_marginRight="10dp"
+                                android:textSize="12dp"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/indicator_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="20dp"
+                    app:cardElevation="10dp"
+                    android:outlineSpotShadowColor="@color/colorPrimary"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:layout_below="@+id/hist_dateDiag"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_weight="8">
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+<!--    <View-->
+<!--        android:layout_below="@+id/wrap_list_history"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/colorSecondary"-->
+<!--        android:layout_marginTop="20dp"></View>-->
+
+</RelativeLayout>

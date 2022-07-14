@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tvArea"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="@dimen/padding_screen"
+                android:paddingRight="@dimen/padding_screen"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/colorPrimaryAdmin">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/img1"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="User Default"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/poppins_bold"
+                    app:layout_constraintStart_toEndOf="@+id/profile_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/email_frag_pengguna_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
+                    android:text="defaultemail@gmail.com"
+                    android:textColor="@color/colorWhite"
+                    app:fontFamily="@font/poppins_medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/username"
+                    app:layout_constraintTop_toBottomOf="@+id/username"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <TextView
+                    android:id="@+id/role_frag_pengguna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
+                    android:text="Admin"
+                    android:padding="2dp"
+                    android:background="@color/colorBg"
+                    android:textColor="@color/colorRed"
+                    app:fontFamily="@font/poppins_medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/email_frag_pengguna_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/email_frag_pengguna_admin"
+                    app:layout_constraintVertical_bias="0.0" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/sma_frag_pengguna"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="36dp"-->
+<!--                    android:background="@color/colorBg"-->
+<!--                    android:text="Admin"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:textColor="@color/colorRed"-->
+<!--                    app:fontFamily="@font/poppins_medium"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/role_frag_pengguna"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/email_frag_pengguna"-->
+<!--                    app:layout_constraintVertical_bias="0.0" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvArea"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_screen"
+                android:paddingRight="@dimen/padding_screen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvArea">
+
+]
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/textViewUmur"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Umur"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            app:fontFamily="@font/poppins" />
+
+                        <TextView
+                            android:id="@+id/umur_frag_pengguna"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="value Umur"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/poppins_bold" />
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorGrey"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/textViewKelamin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Kelamin"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            app:fontFamily="@font/poppins" />
+
+                        <TextView
+                            android:id="@+id/kelamin_frag_pengguna"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="value Jenis Kelamin"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/poppins_bold" />
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorGrey"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/textViewAlamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            app:fontFamily="@font/poppins" />
+
+                        <TextView
+                            android:id="@+id/alamat_frag_pengguna"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="value Alamat"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/poppins_bold"/>
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorGrey"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/toLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/btn_logout_frag_pengguna"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Logout"
+                        android:background="@color/colorRed"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        app:fontFamily="@font/poppins_bold" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

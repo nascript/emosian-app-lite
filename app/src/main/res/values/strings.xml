@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Emosian Lite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="jenis_kelamin">
+        <!--        <item> - Pilih Jenis Kelamin - </item>-->
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+
+    <string-array name="role">
+        <item>Admin</item>
+        <item>Siswa</item>
+    </string-array>
+
+    <string-array name="kelas">
+        <item>Kelas 1 SMA</item>
+        <item>Kelas 2 SMA</item>
+        <item>Kelas 3 SMA</item>
+    </string-array>
+
+    <string-array name="feel">
+        <item>Senang</item>
+        <item>Bahagia</item>
+        <item>Sedih</item>
+        <item>Marah</item>
+        <item>Kecewa</item>
+        <item>Malas</item>
+
+    </string-array>
+
+    <string-array name="listsma">
+        <item>MAN 1 Yogyakarta</item>
+        <item>SMA N 1 Yogyakarta</item>
+        <item>SMA N 2 Yogyakarta</item>
+        <item>SMA N 3 Yogyakarta</item>
+        <item>SMA N 4 Yogyakarta</item>
+        <item>SMA N 5 Yogyakarta</item>
+        <item>SMA N 6 Yogyakarta</item>
+        <item>SMA N 7 Yogyakarta</item>
+        <item>SMA N 8 Yogyakarta</item>
+        <item>SMA N 9 Yogyakarta</item>
+        <item>SMA N 10 Yogyakarta</item>
+        <item>SMA N 11 Yogyakarta</item>
+        <item>SMA N 1 Karangmojo</item>
+        <item>SMA N 1 Panggang</item>
+        <item>SMA N 1 Sarkem</item>
+        <item>SMA N 1 Playen</item>
+        <item>SMA N 2 Playen</item>
+        <item>SMA N 1 Rongkop</item>
+        <item>SMA N 1 Semanu</item>
+        <item>SMA N 1 Semin8</item>
+        <item>SMA N 1 Tanjungsari</item>
+        <item>SMA N 1 Wonosari</item>
+        <item>SMA N 2 Wonosari</item>
+        <item>SMA N 1 Bantul</item>
+        <item>SMA N 2 Bantul</item>
+        <item>SMA N 3 Bantul</item>
+        <item>SMA N 1 Jetis</item>
+        <item>SMA N 1 Sewon</item>
+        <item>SMA N 1 Banguntapan</item>
+        <item>SMA N 2 Banguntapan</item>
+        <item>SMA N 1 Bambanglipuro</item>
+        <item>SMA N 1 Imogiri</item>
+        <item>SMA N 1 Kasihan</item>
+        <item>SMA N 1 Kretek</item>
+        <item>SMA N 1 Pajangan</item>
+        <item>SMA N 1 Piyungan</item>
+        <item>SMA N 1 Pleret</item>
+        <item>SMA N 1 Pundong</item>
+        <item>SMA N 1 Sanden</item>
+        <item>SMA N 1 Sedayu</item>
+        <item>SMA N 1 Srandakan</item>
+        <item>SMA N 1 Dlingo</item>
+        <item>SMA N 1 Galur</item>
+        <item>SMA N 1 Girimulyo</item>
+        <item>SMA N 1 Kalibawang</item>
+        <item>SMA N 1 Kokap</item>
+        <item>SMA N 1 Lendah</item>
+        <item>SMA N 1 Pengasih</item>
+        <item>SMA N 1 Samigaluh</item>
+        <item>SMA N 1 Sentolo</item>
+        <item>SMA N 1 Temon</item>
+        <item>SMA N 1 Wates</item>
+        <item>SMA N 2 Wates</item>
+        <item>SMA Muhammadiyah Galur</item>
+        <item>SMA Sanjaya XIV Nanggulan</item>
+        <item>SMA BOPKRI Wates</item>
+        <item>SMA Maarif Wates</item>
+        <item>SMA Muhammadiyah Wates</item>
+        <item>SMA STELLA DUCE BANTUL</item>
+        <item>SMA Ali Maksum</item>
+        <item>SMA Institut Indonesia</item>
+        <item>SMA Sunan Kalijogo Sleman</item>
+        <item>SMA Kolese De Britto Yogjakarta</item>
+        <item>SMA Kolombo Depok</item>
+        <item>SMA Mandala Bhakti Depok</item>
+        <item>SMA Angkasa Adisucipto Depok</item>
+        <item>SMA Muh 2 Depok</item>
+        <item>SMA GAMA Yogyakarta</item>
+        <item>SMA Muh Gampin</item>
+        <item>SMA Islam I Sleman</item>
+        <item>SMA Proklamasi 1945</item>
+        <item>SMA Immanuel Kalasan</item>
+        <item>SMA Muh Kalasan</item>
+        <item>SMA Muh Minggir</item>
+        <item>SMA Budi Mulia Dua</item>
+        <item>SMA Bina Tama Sleman</item>
+        <item>SMA Dr Wahidin Mlati</item>
+        <item>SMA Muh Mlati</item>
+        <item>SMA Santo Mikael Mlati</item>
+        <item>SMA Islam 2 Moyudan</item>
+        <item>SMA Bina Harapan Ngaglik</item>
+        <item>SMA IKIP Veteran Ngemplak</item>
+        <item>SMA Muh Pakem</item>
+        <item>SMA Islam 3 Sleman</item>
+        <item>SMA Darul Hikmah Pakem</item>
+        <item>SMA Islam 1 Prambanan</item>
+        <item>SMA Muh 1 Prambanan</item>
+        <item>SMA Muh 2 Prambanan</item>
+        <item>SMA Muh Seyegan</item>
+        <item>SMA Sulaiman Sleman</item>
+        <item>SMA Muh 1 Sleman</item>
+        <item>SMA Santo Agustinus Sleman</item>
+        <item>SMA Maarif 1 Sleman</item>
+        <item>SMA Muh 6 Yogyakarta</item>
+        <item>SMA N 1 Cangkringan</item>
+        <item>SMA N 1 Depok</item>
+        <item>SMA N 1 Gamping</item>
+        <item>SMA N 1 Godean</item>
+        <item>SMA N Kalasan</item>
+        <item>SMA N 1 Minggir</item>
+        <item>SMA N 1 Mlati</item>
+        <item>SMA N 1 Ngaglik</item>
+        <item>SMA N 2 Ngaglik</item>
+        <item>SMA N 1 Ngemplak</item>
+        <item>SMA N 1 Pakem</item>
+        <item>SMA N 1 Prambanan</item>
+        <item>SMA N 1 Sayegan</item>
+        <item>SMA N 1 Sleman</item>
+        <item>SMA N 2 Sleman</item>
+        <item>SMA N 1 Tempel</item>
+        <item>SMA N 1 Turi</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentsAdmin.ArticleFragment"
+    android:padding="20dp"
+    android:background="#EEF2F4">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Cari Artikel..."
+        android:id="@+id/search_article"
+        android:background="@drawable/ic_bc_edittextttt"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+
+        android:drawableLeft="@drawable/ic_icon_serach"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_article"
+        android:layout_below="@+id/search_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorRed"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+</RelativeLayout>

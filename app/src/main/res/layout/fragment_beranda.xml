@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentsAdmin.BerandaFragmentAdmin">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/welcome">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang, "
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_below="@+id/welcome"-->
+<!--        android:id="@+id/wrap_caraousel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        android:elevation="15dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:foreground="?android:attr/selectableItemBackground">-->
+
+<!--        <com.synnapps.carouselview.CarouselView-->
+<!--            android:id="@+id/carouselView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            app:fillColor="#FFFFFFFF"-->
+<!--            app:pageColor="#00000000"-->
+<!--            app:radius="6dp"-->
+<!--            app:slideInterval="3000"-->
+<!--            app:strokeColor="#FF777777"-->
+<!--            app:strokeWidth="1dp"-->
+<!--            />-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi Jurnal Harian"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_below="@+id/welcome"
+        android:id="@+id/textViewJournalHarian"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wrap_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewJournalHarian"
+        tools:ignore="NotSibling"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBg"
+        android:elevation="0dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img1"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="3dp"/>
+
+            <Button
+                android:id="@+id/tell_me_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:hint="Bagaimana perasaanmu hari ini ?"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/ic_bg_asking"
+                android:paddingLeft="2dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycler_view_journal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wrap_user"/>
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_below="@+id/wrap_caraousel"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:background="#E5ECEF"></View>-->
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosa"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_below="@+id/recycler_view_journal"
+        android:id="@+id/textDiagnosaItem"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDiagnosaItem"
+        android:id="@+id/to_consult"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+           >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/bg_consult_img"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lakukan Diagnosa Awal"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins_bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_consult"
+        android:id="@+id/to_histories"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/bg_history_img_fix"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cek Riwayat Diagnosa Awal"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins_bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/to_consult"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:text="Konsultasi"-->
+<!--        android:layout_below="@+id/wrap_btn_consult"-->
+<!--        android:background="@drawable/ic_bg_consult"/>-->
+
+</ScrollView>

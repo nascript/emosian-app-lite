@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg_reg"
+        android:paddingTop="70dp"
+        tools:context=".RegisterActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="132dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="40dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Silahkan Daftar"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="28dp" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:hint="Nama"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:textColor="@color/colorTextBlack"
+                        android:textColorHint="#7E7E7E" />
+
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:textColor="@color/colorTextBlack"
+                        android:textColorHint="#7E7E7E" />
+
+                    <Spinner
+                        android:id="@+id/jenis_kelamin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:drawableRight="@drawable/ic_arrow_edittext"
+                        android:paddingLeft="13dp"
+                        android:spinnerMode="dialog" />
+
+                    <EditText
+                        android:id="@+id/umur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:hint="Umur"
+                        android:inputType="number"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:textColor="@color/colorTextBlack"
+                        android:textColorHint="#7E7E7E" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:hint="Alamat"
+                        android:inputType="text"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:textColor="@color/colorTextBlack"
+                        android:textColorHint="#7E7E7E" />
+
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:textColor="@color/colorTextBlack"
+                        android:textColorHint="#7E7E7E" />
+
+                    <Spinner
+                        android:id="@+id/pilihan_sma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:drawableRight="@drawable/ic_arrow_edittext"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:spinnerMode="dialog" />
+
+                    <Spinner
+                        android:id="@+id/pilihan_kelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:drawableRight="@drawable/ic_arrow_edittext"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:spinnerMode="dialog" />
+
+                    <EditText
+                        android:id="@+id/organisasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_bc_edittext"
+                        android:hint="Organisasi"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp"
+                        android:textColor="@color/colorTextBlack"
+                        android:textColorHint="#7E7E7E" />
+
+                    <!--                <Spinner-->
+                    <!--                    android:id="@+id/pilihan_role"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="50dp"-->
+                    <!--                    android:background="@drawable/ic_bc_edittext"-->
+                    <!--                    android:drawableRight="@drawable/ic_arrow_edittext"-->
+                    <!--                    android:paddingLeft="20sp"-->
+                    <!--                    android:paddingRight="20sp"-->
+                    <!--                    android:spinnerMode="dialog"-->
+                    <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                    app:layout_constraintTop_toBottomOf="@+id/pilihan_sma"-->
+                    <!--                    app:layout_constraintVertical_bias="0.200" />-->
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="@drawable/ic_bg_button"
+                        android:fontFamily="@font/poppins_medium"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Daftar"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Sudah Punya Akun ?"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <TextView
+                            android:id="@+id/to_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Login"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</ScrollView>

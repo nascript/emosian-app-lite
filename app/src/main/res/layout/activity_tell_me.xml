@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TellMeActivity"
+    android:layout_margin="20dp">
+
+    <Spinner
+        android:id="@+id/spinner_feel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="18dp"
+        android:background="@drawable/ic_bc_edittext"/>
+
+    <EditText
+        android:id="@+id/feel_desc"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinner_feel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ceritakan Apa yang membuatmu merasa seperti ini ?"
+        android:inputType="textMultiLine"
+        android:background="@drawable/ic_bc_edittext"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/btn_submit_feel"
+        android:layout_below="@+id/feel_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_bg_button"
+        android:text="Kirim Journal"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
